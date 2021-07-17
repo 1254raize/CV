@@ -72,11 +72,16 @@ a{
 }
 
 .name-animated{   
+    content: "Daniel A.";
     width: 9ch;
     animation: typing 1s steps(11), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
+}
+
+.name-animated::before{
+    content: "Daniel Avila";
 }
 
 @keyframes typing {
@@ -152,7 +157,7 @@ a{
     left: 50%;
     transform: translate(-50%, 0%);
     padding: 20px 20px 0 20px;
-    width: 60%;
+    width: 70%;
 }
 
 .time-icon{
@@ -234,12 +239,34 @@ a{
     padding: 20px 0 10px 0;
 }
 
+.screen-size{
+    display: inline;
+}
+
+.phone-size{
+    display: none;
+}
+
 @media only screen and (max-width: 1200px) {
-    #carousel-skills{
-        min-height: 800px;
+
+    .name-animated{
+        font-size: 5rem;
     }
+
+    .name-animated::before{
+        content: "Daniel A.";
+    }
+
+    .description{
+        width: 80%;
+    }
+
     .time-stamp::before{
         display: none;
+    }
+
+    .time-stamp{
+        width: 80%;
     }
 
     .time-icon{
@@ -248,7 +275,7 @@ a{
 
     .chemistry-icon, .dev-icon, .checklist-icon{
         float: none;
-        width: 50%;       
+        width: 40%;       
     }
 
     .cv-photo{
@@ -256,5 +283,14 @@ a{
     }
 
     .skill-row{
-        left: 45%;
+        left: 40%;
+        width: 80%;
+    }
+
+    .phone-size{
+        display: inline;
+    }
+
+    .screen-size{
+        display: none;
     }
