@@ -25,7 +25,8 @@ p{
 }
 
 a{
-    color: rgb(161, 44, 44);
+    color: rgb(44, 161, 106);
+    font-weight: 700;
 }
 
 .title-center{
