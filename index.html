@@ -29,8 +29,8 @@
 
 </head>
 
-<body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+<body data-spy="scroll" data-target="#navbar" data-offset="-20">
+    <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"> <img class="nav-icon" src="images\FOTO HOJA-B.png" alt="">
                 Daniel Avila
@@ -309,6 +309,13 @@
             <p class="copyright">© 2021 Daniel Avila.</p>
         </div>
     </section>
+
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar'
+        })
+
+    </script>
 </body>
 
 </html>
